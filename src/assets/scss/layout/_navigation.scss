@@ -1,0 +1,15 @@
+nav.navbar {
+  ul {
+    li {
+      a {
+        font-family: "MissionGothicBold", sans-serif;
+        color: #004990;
+        font-size: 16px;
+        font-weight: bold;
+        &:hover {
+          color: #ef1514;
+        }
+      }
+    }
+  }
+}

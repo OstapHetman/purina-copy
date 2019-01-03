@@ -1,0 +1,85 @@
+#catalog {
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #004990;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  .product-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding-bottom: 10px;
+    border: 1px #004990 solid;
+    box-shadow: 0 0 5px #333;
+    margin-top: 25px;
+    &__img {
+      padding-top: 10px;
+      img {
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: auto;
+      }
+    }
+    &__info {
+      p {
+        font-family: "MissionGothicBold";
+        font-weight: bold;
+        font-size: 20px;
+        color: #3a3a3a;
+        text-align: center;
+        padding: 10px 10px;
+      }
+    }
+    &__price {
+      border-top: 1px #004990 solid;
+      border-bottom: 1px #004990 solid;
+      p {
+        font-family: "MissionGothicBold";
+        font-weight: bold;
+        font-size: 20px;
+        color: #004990;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+      }
+    }
+    &__stock {
+      .yes {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: #004990;
+        text-align: center;
+        padding: 10px 0;
+      }
+      .no {
+        color: #ea1f26;
+      }
+    }
+    &__action {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #004990;
+        border: solid 2px #004990;
+        text-transform: uppercase;
+        display: block;
+        max-width: 200px;
+        &:not(:first-child) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

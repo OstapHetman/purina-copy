@@ -1,5 +1,10 @@
 // Import Fonts
 @font-face {
-  font-family: "FontName";
-  src: url("../assets/fonts/FontName.ttf") format("truetype");
+  font-family: "MissionGothicBlack";
+  src: url("assets/fonts/MissionGothicBlack.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MissionGothicBold";
+  src: url("assets/fonts/mission_gothic_bold-webfont.woff") format("woff");
 }
