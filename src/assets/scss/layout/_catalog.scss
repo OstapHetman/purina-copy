@@ -1,9 +1,9 @@
 #catalog {
   h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    font-family: "MissionGothicBold", "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
     color: #004990;
-    font-size: 50px;
+    font-size: 36px;
     text-transform: uppercase;
     margin-bottom: 25px;
   }
@@ -31,19 +31,28 @@
     }
     &__info {
       p {
-        font-family: "MissionGothicBold";
+        font-family: "MissionGothicBold", "Arial Narrow", Arial, sans-serif;
         font-weight: bold;
         font-size: 20px;
         color: #3a3a3a;
         text-align: center;
-        padding: 10px 10px;
+        padding: 10px 10px 0px 10px;
+        margin-bottom: 0;
+      }
+      small {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        color: #3a3a3a;
+        text-align: center;
+        display: block;
+        padding: 0px 10px 10px 10px;
       }
     }
     &__price {
       border-top: 1px #004990 solid;
       border-bottom: 1px #004990 solid;
       p {
-        font-family: "MissionGothicBold";
+        font-family: "MissionGothicBold", "Arial Narrow", Arial, sans-serif;
         font-weight: bold;
         font-size: 20px;
         color: #004990;

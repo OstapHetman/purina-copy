@@ -11,5 +11,18 @@ nav.navbar {
         }
       }
     }
+    .dropdown-menu {
+      border: solid 2px #bdbcb9;
+      background-color: #f5f1e7;
+      a {
+        font-family: "MissionGothicBold", "Arial Narrow", Arial, sans-serif;
+        color: #004990;
+        font-weight: 400;
+        text-transform: uppercase;
+        &:hover {
+          background-color: #f5f1e7;
+        }
+      }
+    }
   }
 }

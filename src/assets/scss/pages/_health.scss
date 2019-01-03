@@ -1,0 +1,121 @@
+.health {
+  background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    border: 8px solid rgba(255, 255, 255, 0.3);
+  }
+  .title {
+    h1 {
+      font-family: "MissionGothicBold", "Arial Narrow", Arial, sans-serif;
+      color: #004990;
+      font-weight: bold;
+      font-size: 36px;
+      margin: 25px 0px;
+    }
+    h4 {
+      font-size: 18px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #0092d2;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+  }
+  .main-text {
+    p {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.428571429;
+    }
+  }
+  .additional {
+    a:hover {
+      p {
+        color: #2a6496;
+      }
+    }
+    .wrapper {
+      max-width: 266px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      &__text {
+        margin-top: -65px;
+        p {
+          font-size: 18px;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          line-height: 1.1;
+          text-align: center;
+          color: #428bca;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .tabs-info {
+    margin-top: 80px;
+    border-top: 1px solid #eee;
+    ul.nav-tabs {
+      padding-top: 20px;
+    }
+    #healthTab {
+      border-bottom: 0;
+      li {
+        img {
+          max-width: 100%;
+        }
+        a {
+          margin-top: 15px;
+          padding: 0;
+          position: relative;
+          &.active {
+            &:before {
+              content: url(assets/images/bottom-arrow.png);
+              position: absolute;
+              bottom: -30px;
+              left: 0;
+              right: 0;
+              margin: auto;
+            }
+          }
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          line-height: 1.1;
+          color: #428bca;
+          font-size: 14px;
+          font-weight: bold;
+          text-align: center;
+          border: 0;
+          background-color: transparent;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-top: 50px;
+      h4 {
+        font-size: 15px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #0092d2;
+        font-weight: bold;
+        margin-bottom: 50px;
+      }
+      p {
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.428571429;
+      }
+    }
+  }
+}

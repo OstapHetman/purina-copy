@@ -1,0 +1,29 @@
+#breadcrumb {
+  ul {
+    z-index: 2;
+    li {
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      color: #333;
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 15px;
+        &:after {
+          content: "/ ";
+          position: absolute;
+          top: 0;
+          right: -10px;
+          color: #ccc;
+        }
+      }
+      a {
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        color: #428bca;
+        &:hover {
+          color: #2a6496;
+        }
+      }
+    }
+  }
+}
