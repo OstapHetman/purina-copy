@@ -152,6 +152,11 @@
       &__action {
         a {
           font-size: 13px;
+          &:last-child {
+            font-size: 18px;
+            padding-left: 25px;
+            padding-right: 25px;
+          }
         }
       }
     }
