@@ -118,4 +118,63 @@
       }
     }
   }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .title {
+      h1 {
+        font-size: 28px;
+      }
+    }
+    .additional {
+      .wrapper {
+        margin: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    &:before {
+      display: none;
+    }
+    .title {
+      h1 {
+        font-size: 22px;
+        text-align: center;
+      }
+      h4 {
+        margin-bottom: 15px;
+      }
+    }
+    .main-text {
+      p {
+        font-size: 14px;
+      }
+    }
+    .additional {
+      .wrapper {
+        margin: auto;
+      }
+    }
+    .tabs-info {
+      #healthTab {
+        li {
+          a {
+            font-size: 13px;
+            &:before {
+              display: none;
+            }
+            &.active {
+              color: red;
+            }
+          }
+        }
+      }
+      .tab-content {
+        h4 {
+          margin-bottom: 25px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }

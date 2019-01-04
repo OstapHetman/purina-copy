@@ -12,4 +12,16 @@
     max-width: 175px;
     height: auto;
   }
+  @media screen and (max-width: 991px) {
+    a {
+      display: block;
+      text-align: center;
+      font-size: 14px;
+    }
+    img {
+      max-width: 100px;
+      display: block;
+      margin: auto;
+    }
+  }
 }

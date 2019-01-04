@@ -55,6 +55,7 @@
         color: #428bca;
         position: relative;
         width: 100%;
+        white-space: normal;
         text-align: left;
       }
       button[aria-expanded="false"] {
@@ -95,6 +96,7 @@
           font-weight: bold;
           border: 1px solid black;
           text-align: center;
+          vertical-align: middle;
           padding: 5px;
         }
         td {
@@ -102,8 +104,35 @@
           color: #333;
           border: 1px solid black;
           text-align: center;
+          vertical-align: middle;
           padding: 5px;
         }
+      }
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    h1 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+      text-align: justify;
+    }
+    &:before {
+      display: none;
+    }
+    table {
+      th {
+        font-size: 14px;
+      }
+      td {
+        font-size: 14px;
       }
     }
   }

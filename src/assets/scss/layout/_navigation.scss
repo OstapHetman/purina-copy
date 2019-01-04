@@ -25,4 +25,46 @@ nav.navbar {
       }
     }
   }
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    // right: 0;
+    // top: 25%;
+    .navbar-toggler {
+      position: absolute;
+      top: -70px;
+      right: 15px;
+      &:focus {
+        outline: none;
+      }
+      i {
+        font-size: 28px;
+        color: #004990;
+      }
+    }
+    ul {
+      background-color: #004990;
+      padding: 10px;
+      .dropdown-menu {
+        background: transparent;
+        border: 0;
+        a {
+          color: #fff;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+      li {
+        a {
+          color: #fff;
+          padding-left: 0;
+          white-space: normal;
+        }
+      }
+    }
+  }
 }

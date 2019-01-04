@@ -1,8 +1,19 @@
 header {
   background-color: #f5f1e7;
+  position: relative;
   .brand {
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: solid 4px #004990;
+  }
+  @media screen and (max-width: 767px) {
+    .brand {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      img {
+        max-width: 70%;
+        height: auto;
+      }
+    }
   }
 }

@@ -14,6 +14,12 @@
     height: calc(100% + 16px);
     border: 8px solid rgba(255, 255, 255, 0.3);
   }
+  .product-image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
   .product-info {
     h3 {
       font-family: "MissionGothicBold", "Arial Narrow", Arial, sans-serif;
@@ -98,6 +104,93 @@
       font-family: Arial, sans-serif;
       td {
         text-align: center;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .product-info {
+      h3 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    #myTab {
+      margin-top: 25px;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .product-image {
+      img {
+        max-width: 35%;
+        display: block;
+        margin: auto;
+      }
+    }
+    .product-info {
+      text-align: center;
+      h3 {
+        font-size: 22px;
+      }
+      p {
+        text-align: left;
+        font-size: 14px;
+      }
+    }
+    #myTab {
+      margin-top: 25px;
+    }
+    .tab-content {
+      margin-top: 25px;
+      h4 {
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    &:before {
+      display: none;
+    }
+    .product-image {
+      img {
+        max-width: 35%;
+        display: block;
+        margin: auto;
+      }
+    }
+    .product-info {
+      text-align: center;
+      h3 {
+        font-size: 18px;
+      }
+      p {
+        text-align: left;
+        font-size: 14px;
+      }
+    }
+    #myTab {
+      margin-top: 25px;
+    }
+    .tab-content {
+      margin-top: 25px;
+      h4 {
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      img {
+        max-width: 75px;
+        height: auto;
+      }
+      p {
+        text-align: center;
+        font-size: 14px;
       }
     }
   }
