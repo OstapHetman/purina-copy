@@ -53,6 +53,34 @@
         font-family: Arial, sans-serif;
         font-weight: 700;
         color: #428bca;
+        position: relative;
+        width: 100%;
+        text-align: left;
+      }
+      button[aria-expanded="false"] {
+        &:after {
+          content: "+";
+          position: absolute;
+          font-size: 25px;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          right: 0;
+          top: 0;
+          color: #428bca;
+        }
+      }
+      button[aria-expanded="true"] {
+        color: red;
+        &:after {
+          content: "-";
+          font-size: 25px;
+          position: absolute;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          right: 0;
+          top: 0;
+          color: red;
+        }
       }
     }
     .card-body {
@@ -60,6 +88,23 @@
       line-height: 1.428571429;
       color: #333;
       padding: 13px;
+      table {
+        th {
+          font-family: Arial, sans-serif;
+          color: #333;
+          font-weight: bold;
+          border: 1px solid black;
+          text-align: center;
+          padding: 5px;
+        }
+        td {
+          font-family: Arial, sans-serif;
+          color: #333;
+          border: 1px solid black;
+          text-align: center;
+          padding: 5px;
+        }
+      }
     }
   }
 }

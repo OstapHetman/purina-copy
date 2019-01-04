@@ -15,6 +15,7 @@
     <meta name="author" content="name, email@hotmail.com" />
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+<link href="assets/css/bootstrap-4-navbar.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -76,12 +77,46 @@
                 <a class="dropdown-item" href="products.html"
                   >Корма для Собак</a
                 >
-                <a class="dropdown-item" href="#"
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  id="submenu1"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                   >Правильное питание в любом возрасте</a
                 >
-                <a class="dropdown-item" href="#"
+
+                <div class="dropdown-menu" aria-labelledby="submenu1">
+                  <a class="dropdown-item" href="single.html"
+                    >КОРМА ДЛЯ ЩЕНКОВ (ДО 1 ГОДА)</a
+                  >
+                  <a class="dropdown-item" href="single.html"
+                    >КОРМА ДЛЯ ЩЕНКОВ (ДО 2 ГОДА)</a
+                  >
+                  <a class="dropdown-item" href="single.html"
+                    >КОРМА ДЛЯ ЩЕНКОВ (ДО 3 ГОДА)</a
+                  >
+                </div>
+
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  id="submenu2"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                   >Корма для собак собак-особый уход</a
                 >
+
+                <div class="dropdown-menu" aria-labelledby="submenu2">
+                  <a class="dropdown-item" href="single.html"
+                    >КОРМА ДЛЯ ВЗРОСЛЫХ АКТИВНЫХ СОБАК</a
+                  >
+                  <a class="dropdown-item" href="single.html"
+                    >КОРМА ДЛЯ СОБАК С ЧУВСТВИТЕЛЬНЫМ ПИЩЕВАРЕНИЕМ</a
+                  >
+                </div>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -95,9 +130,6 @@
                 >Здоровье и Питание</a
               >
               <div class="dropdown-menu" aria-labelledby="dropdown03">
-                <a class="dropdown-item" href="health.html"
-                  >Здоровье и Питание</a
-                >
                 <a class="dropdown-item" href="faq.html"
                   >Вопросы и ответы о здоровье и питании</a
                 >
@@ -234,6 +266,7 @@
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-4-navbar.js"></script>
     <!-- Main script -->
     <script src="assets/js/app.js"></script>
   </body>
