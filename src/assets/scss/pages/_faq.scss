@@ -1,0 +1,65 @@
+.faq {
+  background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    border: 8px solid rgba(255, 255, 255, 0.3);
+  }
+  h1 {
+    font-family: "MissionGothicBold", "Arial Narrow", Arial, sans-serif;
+    color: #004990;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 36px;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #0092d2;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: Arial, sans-serif;
+    line-height: 1.428571429;
+    color: #333;
+  }
+  .accordion {
+    .card {
+      border-top: solid 1px #000;
+      border-radius: 0;
+      border-left: 0;
+      border-right: 0;
+      &:last-child {
+        border-bottom: solid 1px #000;
+      }
+    }
+    .card-header {
+      background-color: transparent;
+      padding: 0;
+      border: 0;
+      button {
+        font-family: Arial, sans-serif;
+        font-weight: 700;
+        color: #428bca;
+      }
+    }
+    .card-body {
+      font-family: Arial, sans-serif;
+      line-height: 1.428571429;
+      color: #333;
+      padding: 13px;
+    }
+  }
+}
